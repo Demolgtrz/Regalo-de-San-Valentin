@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Mejor Amiga 💖</title>
+    <!-- Google Fonts: Poppins & Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Celebration Overlay -->
+    <div id="celebration-overlay" class="hidden">
+        <div class="celebration-content glass-panel">
+            <h1>¡SABÍA QUE DIRÍAS QUE SÍ PORQUE IBAMOS A TENER UN PROBLEMA! 🎉</h1>
+            <p>Eres la mejor del mundo mundial 🌍💖</p>
+            <!-- REPLACE: Add your final celebration image here -->
+            <img src="image/yippee-cat-kitty.gif" alt="Final Feliz" class="final-image">
+            <button id="close-celebration" class="btn-neumorphic">Ver de nuevo 💖</button>
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="section hero">
+            <h1 class="title">¡Feliz San Valentín! 💘</h1>
+            <p class="subtitle">Para la mejor amiga del universo</p>
+        </header>
+
+        <!-- 1. Widget de Música (Spotify Style) -->
+        <section class="section music-player">
+            <h2>Canciones que te dedico 🎶</h2>
+            <div class="glass-panel player-container">
+                <div class="album-art">
+                    <!-- REPLACE: Your album cover image -->
+                    <img src="C:\Users\Demol\Desktop\sanvalentinnn\playlist\mai_milo j.jpg" alt="Album Art"
+                        id="album-cover">
+                </div>
+                <div class="track-info">
+                    <h2 id="track-title">Canción Especial</h2>
+                    <p id="track-artist">Artista Favorito</p>
+                </div>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+
+                <div class="controls">
+                    <button id="prev-btn" class="control-btn"><i class="fas fa-backward"></i></button>
+                    <button id="play-btn" class="control-btn play"><i class="fas fa-play"></i></button>
+                    <button id="next-btn" class="control-btn"><i class="fas fa-forward"></i></button>
+                </div>
+
+                <!-- Lyrics Container -->
+                <div class="lyrics-container" id="lyrics-container">
+                    <p class="lyric-line">Esperando letra...</p>
+                </div>
+                <button id="toggle-lyrics" class="btn-neumorphic small">Ver Letra 🎤</button>
+            </div>
+        </section>
+
+        <!-- 2. Mensajes Bonitos -->
+        <section class="section messages">
+            <h2>Mensajes Boniticos✨</h2>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="glass-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-heart"></i>
+                            <p>Toca aquí</p>
+                        </div>
+                        <div class="card-back">
+                            <!-- REPLACE: Message 1 -->
+                            <p>"Eres una persona muy especial para mi" 💖</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-heart"></i>
+                            <p>Toca aquí</p>
+                        </div>
+                        <div class="card-back">
+                            <!-- REPLACE: Message 2 -->
+                            <p>"Gracias por siempre estar ahí para mi" 🌟</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-heart"></i>
+                            <p>Toca aquí</p>
+                        </div>
+                        <div class="card-back">
+                            <!-- REPLACE: Message 3 -->
+                            <p>"Tengo suerte de haberte conocido." 💖</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2.5 Galería de Fotos -->
+        <section class="section gallery">
+            <h2>TÚ Y YO, YO Y TÚ 📸</h2>
+            <div class="gallery-grid">
+                <!-- Photo 1 -->
+                <div class="polaroid">
+                    <img src="image/REC1.jpeg" alt="Foto 1">
+                    <p class="caption"></p>
+                </div>
+                <!-- Photo 2 -->
+                <div class="polaroid">
+                    <img src="image/REC2.jpeg" alt="Foto 2">
+                    <p class="caption"></p>
+                </div>
+                <!-- Photo 3 -->
+                <div class="polaroid">
+                    <img src="image/REC3.jpeg" alt="Foto 3">
+                    <p class="caption"></p>
+                </div>
+                <!-- Photo 4 -->
+                <div class="polaroid">
+                    <img src="image/REC4.jpeg" alt="Foto 4">
+                    <p class="caption"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. La Pregunta -->
+        <section class="section the-question">
+            <h2>Una pregunta importante... 🤔</h2>
+            <div class="glass-panel question-box">
+                <p class="big-question">¿QUIERES SEGUIR SIENDO MI MEJOR AMIGA POR SIEMPRE SIEMPRE?</p>
+
+                <div class="meme-container">
+                    <!-- REPLACE: Default meme image -->
+                    <img src="image/kitty-catfeliz.gif" alt="Meme" id="meme-image">
+                </div>
+
+                <div class="buttons-container">
+                    <button id="yes-btn" class="btn-primary">¡SÍ! 😍</button>
+                    <button id="no-btn" class="btn-secondary">No 😢</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Hecho con mucho amor para ti</p>
+        </footer>
+
+    </div>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
